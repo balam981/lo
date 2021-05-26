@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        body{
+              background-color: #117A65;
+              padding: 0 20px 20px 20px;
+              margin: auto;
+              border: 10px solid #7F8C8D;
+            }
+          p,img{
+              padding:0 300px 0 0 ;
+              font:verdana;
+              color: black;
+              font-size: 140%;
+            }
+            
+  
+            h2{
+                color:#154360;
+                font-size:300%;
+              }
+    </style>
+    <title>Convertidor Base</title>
+</head>
+
+<body>
+    <h1 align ="center"><font color= #A93226 >VARGAS VIDAL BALAM / GRUPO:8CM11 / PRACTICA 1 EJERCICIO 1</font></h1>
+    <script type="text/javascript">
+        //solicitud del dato y recopilación.
+        var octal= prompt("Numero Octal: ","");
+
+        //conversión del dato recibido a octal para el funcionamiento de las conversiones posteriores.
+        var trueOctal=parseInt(octal,8)
+        var bin= trueOctal.toString(2); 
+        var dec=parseInt(trueOctal,10);
+        //console.log(octal);
+        //console.log(bin);
+        //console.log(dec);
+    
+    </script>
+    
+    <h1>CONVERTIDOR DE BASES</h1><br> 
+    
+    <h2>Numero Introducido en Octal:</h2>
+    <label id="octal1"></label><br>
+
+    <h2>Numero Introducido en Binario:</h2>
+    <label id="binario1"></label><br>
+
+    <h2>Numero Introducido en Decimal:</h2>
+    <label id="decimal1"></label><br>
+    
+    <script>
+        var text="<h1>el valor es</h1>";
+        //presentación de los datos por medio de los labels.
+        document.getElementById("octal1").innerHTML = octal;
+        document.getElementById('binario1').innerHTML = "BINARIO ES" + bin;
+        document.getElementById('decimal1').innerHTML = text + " " +dec;
+    </script>
+    <style>
+        label{
+            display :block;
+            text-decoration: underline;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
